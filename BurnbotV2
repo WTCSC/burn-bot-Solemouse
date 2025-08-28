@@ -1,0 +1,42 @@
+print("Do not write with capital letters\n")
+milkorcereal = input("Do you put the milk first or the cereal first? \n")
+if milkorcereal == "milk":
+    print("Disgusting, you don't get to continue.")
+    quit()
+elif milkorcereal == "cereal":
+    print("Good, you are not one of those weirdos that put the milk first.\n")
+
+age = int(input("Age: \n"))
+
+favoritehobby = input("Favorite Hobby: \n").lower()
+
+if favoritehobby in ["reading", "books"]:
+    print("Reading? Ah yes, socially acceptable hallucinations.\n")
+
+elif favoritehobby in ["games", "video games", "playing games", "coding"]:
+    print("Nerd.")
+
+elif favoritehobby in ["gym", "working out", "exercise", "cross country"]:
+    print("Congrats on being able to pick things up and put them down, truly incredible.")
+
+elif favoritehobby in ["cooking", "baking"]:
+    print("Gordon Ramsay called, you don't move on to the next round.")
+
+elif favoritehobby in ["music", "singing"]:
+    print("Nice, finally something worse than your shower songs.")
+elif favoritehobby in ["hiking", "walking dog", "dog"]:
+    print("Good choice, not gonna insult you.") 
+    quit()
+
+else:
+    print(f"{favoritehobby.capitalize()}? Sure. And my hobby is making questionable life decisions.")
+
+if age < 18:
+    print("Come back when your voice stops glitching.\n")
+
+elif 18 <= age < 30:
+    print("You've got student loans older than your credit score.\n")
+
+elif age >= 30:
+    print("You bend down and make sound effects getting up.\n")
+
